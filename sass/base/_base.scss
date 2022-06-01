@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'TradeGothocLT_Extended';
+    src: url('../fonts/TradeGothicLT-Extended.woff2'),
+         url('../fonts/TradeGothicLT-Extended.woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothocLT_BoldExtended';
+    src: url('../fonts/TradeGothicLT-BoldExtended.woff2'),
+         url('../fonts/TradeGothicLT-BoldExtended.woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ogg Roman';
+    src: url('../fonts/Ogg\ Roman.woff2'),
+         url('../fonts/Ogg\ Roman.woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+body {
+  font-family: TradeGothocLT_BoldExtended; 
+  font-weight: 700; 
+  font-style: normal;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Ogg Roman; 
+  font-weight: 400; 
+  font-style: normal;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1024px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 320px) {
+        width: 320px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1024px) {
+        width: 1024px;
+    }
+}
+// h1,h2,h3,h4,h5,h6,p {
+//     margin: 0;
+// }
+// img {
+//     max-width: 100%;
+//     display: block;
+//     height: auto;
+// }
+// .title {
+//     font-weight: 700;
+//     font-size: 28px;
+//     line-height: 1.17;
+//     text-align: center;
+//     color: $secondary-text-color;
+//     margin-bottom: 30px;
+// }
