@@ -1,0 +1,23 @@
+.header__icon {
+    display: flex;
+    justify-content: end;
+}
+
+.header__icon_button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-right: 4px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.header__icon_search {
+    width: 20px;
+}
+.header__icon_shop {
+    width: 14px;
+}
+.header__icon_like {
+    width: 13px;
+}

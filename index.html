@@ -10,8 +10,111 @@
     <link rel="stylesheet" href="./css/body.min.css">
 </head>
 <body>
-    <div class="covid container">COVID-19: Learn what we're doing to keep the community and our staff safe.</div>
-    <header></header>
+    <div class="covid">
+        <div class="container">
+            <p class="covid__text">
+                COVID-19: Learn what we're doing to keep the community and our staff safe.
+            </p>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container header__container">
+            <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+            >
+                <svg
+                    width="20"
+                    height="20"
+                >
+                    <use href="./img/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <button class="button">
+                <span class="button_span"></span>
+                <span class="button_span"></span>
+                <span class="button_span"></span>
+            </button>
+            <div class="header__icon">
+                <button class="header__icon_button">
+                    <img class="header__icon_search"
+                        alt="Search" 
+                        src="./img/search.jpg"
+                        srcset="./img/search@2x.jpg,
+                                ./img/search@3x.jpg"
+                    >
+                </button>
+                <button class="header__icon_button">
+                    <img class="header__icon_shop"
+                        alt="Shop" 
+                        src="./img/shop.jpg"
+                        srcset="./img/shop@2x.jpg,
+                                ./img/shop@3x.jpg"
+                    >
+                </button>
+                <button class="header__icon_button">
+                    <img class="header__icon_like"
+                        alt="Like" 
+                        src="./img/like.jpg"
+                        srcset="./img/like@2x.jpg,
+                                ./img/like@3x.jpg"
+                    >
+                </button>
+            </div>
+            <div class="header__box">
+                <a href="./index.html" class="header__box_logo">
+                    <img class="header__box_logo_icon"
+                        alt="Logo" 
+                        src="./img/Logomark.jpg"
+                        srcset="./img/Logomark@2x.jpg,
+                                ./img/Logomark@3x.jpg"
+                    >
+                    <img class="header__box_logo_title"
+                        alt="Name logo"
+                        src="./img/tagline.jpg" 
+                        srcset="./img/tagline@2x.jpg,
+                                ./img/tagline@3x.jpg"
+                    >
+                </a>
+                <div class="header__box_nav">
+                    <ul class="header__box_nav_list">
+                        <li class="header__box_nav_list_item">
+                            WHAT’S NEW
+                        </li>
+                        <li class="header__box_nav_list_item">
+                            BRANDS
+                        </li>
+                        <li class="header__box_nav_list_item">
+                            CURATIONS
+                        </li>
+                        <li class="header__box_nav_list_item">
+                            ART
+                        </li>
+                        <li class="header__box_nav_list_item">
+                            BEAUTY
+                        </li>
+                        <li class="header__box_nav_list_item">
+                            SELF CARE
+                        </li>
+                        <li class="header__box_nav_list_item">
+                            STYLE
+                        </li>
+                        <li class="header__box_nav_list_item">
+                            LIFESTYLE
+                        </li>
+                        <li class="header__box_nav_list_item">
+                            TECH
+                        </li>
+                        <li class="header__box_nav_list_item">
+                            STORIES
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </header>
     <main></main>
     <footer></footer>
 </body>

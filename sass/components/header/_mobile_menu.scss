@@ -1,0 +1,28 @@
+.menu-toggle {
+    display: none;
+    position: absolute;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+.button {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 5px 0;
+    background-color: transparent;
+}
+.button_span {
+    width: 20px;
+    margin-bottom: 2px;
+    border: solid 0.5px #000;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+// span {
+//     margin: 0;
+// }
