@@ -1,0 +1,109 @@
+.slider {
+    background-color: #F4BAB5;
+}
+.slider__container {
+    position: relative;
+    padding: 30px 15px 11px 15px;
+}
+
+.slider__container_photo {
+    position: absolute;
+    top: 60px;
+    left: 39px;
+}
+.slider__container_photo_box {
+    position: absolute;
+}
+.slider__container_photo_box_svg {
+    margin: 0 auto;
+}
+.slider__container_photo_box_img {
+    position: absolute;
+    top: 63px;
+    left: 64px;
+    border-radius: 50%;
+    width: 119px;
+}
+.slider__container_photo_info {
+    display: flex;
+    align-items: center;
+    padding: 9px 20px;
+    border: solid 1px #000;
+    border-radius: 8px;
+    margin-top: 240px;
+}
+.slider__container_photo_info_point {
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #B3F695;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.slider__container_photo_info_text {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.slider__container_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider__container_text_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    font-size: 16px;
+    line-height: 37px;
+    text-align: center;
+}
+.slider__container_text_name {
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    align-items: center;
+    font-size: 25px;
+    line-height: 63px;
+    margin-top: 15px;
+}
+.slider__container_text_rubric {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 280px;
+    text-align: center;
+    padding: 0 20px;
+}
+.slider__container_text_button {
+    border: none;
+    padding: 5px 0;
+    background-color: transparent;
+    border: 1px solid #000000;
+    padding: 11px 69px;
+    margin-top: 20px;
+    &:hover {
+        background-color: #000000;
+        color: #ffffff;
+    }
+}
+
+.slider__container_tack {
+    margin-top: 29px;
+}
+.slider__container_tack_block {
+    display: flex;
+    justify-content: center;
+}
+.slider__container_tack_block_item {
+    width: 9px;
+    height: 9px;
+    border: solid 1px #000;
+    border-radius: 50%;
+    margin-right: 4px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
