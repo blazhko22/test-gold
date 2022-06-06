@@ -1,0 +1,33 @@
+.footer__container_block {
+    padding: 0 25px;
+}
+.footer__container_block_text {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer__container_block_form {
+    position: relative;
+    margin-top: 10px;
+    border-bottom: solid 1px #000000;
+}
+// .footer__container_block_form_label {
+
+// }
+.footer__container_block_form_input {
+    font-size: 12px;
+    line-height: 18px;
+    color: #9F9C9C;
+    width: 100%;
+    padding: 5px 0;
+    background: none;
+    border: none;
+}
+.footer__container_block_form_button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: 3px;
+    right: 0;
+    cursor: pointer;
+}

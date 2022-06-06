@@ -684,4 +684,226 @@ img {
 .slider__container_tack_block_item:last-child {
   margin-right: 0;
 }
+
+.watch__container {
+  padding: 30px 25px;
+}
+
+.watch__container_title {
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.watch__container_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.watch__container_box_popovakammeyer_list {
+  display: none;
+}
+
+.watch__container_box_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.watch__container_box_list_item {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-basis: -webkit-calc(100% / 2 - 30px);
+      -ms-flex-preferred-size: calc(100% / 2 - 30px);
+          flex-basis: calc(100% / 2 - 30px);
+  margin-top: 30px;
+  margin-right: 60px;
+}
+
+.watch__container_box_list_item:nth-child(-n + 2) {
+  margin-top: 0;
+}
+
+.watch__container_box_list_item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.watch__container_box_list_item_combinedShape {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  left: -6px;
+}
+
+.watch__container_list_item_img {
+  width: 67px;
+  z-index: 2;
+  border-top: solid 5px #f2f2f2;
+  border-left: solid 5px #f2f2f2;
+  border-right: solid 5px #f2f2f2;
+  border-bottom: solid 10px #f2f2f2;
+}
+
+.watch__container_list_item_title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 51px;
+  height: 16px;
+}
+
+.watch__container_box_list_item_oval {
+  position: absolute;
+  z-index: 1;
+  top: -19px;
+  right: 0;
+}
+
+.watch__container_box_list_item_bulb {
+  position: absolute;
+  z-index: 3;
+  top: -26px;
+  right: -13px;
+}
+
+.watch__container_box_list_item_star {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  right: -25px;
+}
+
+.watch__container_box_list_item_dandruff {
+  position: absolute;
+  z-index: 3;
+  top: -13px;
+  left: -20px;
+}
+
+.watch__container_box_list_item_polygon {
+  position: absolute;
+  z-index: 1;
+  top: -15px;
+  right: 0;
+}
+
+.watch__container_box_list_item_combinedShape3 {
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: -6px;
+}
+
+.watch__container_box_list_item_star2 {
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  right: -25px;
+}
+
+.watch__container_box_list_item_combinedShape4 {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: -5px;
+}
+
+.watch__container_box_list_item_tent {
+  position: absolute;
+  z-index: 3;
+  top: -20px;
+  right: -23px;
+}
+
+.watch__container_box_list_item_triangle2 {
+  position: absolute;
+  z-index: 1;
+  top: -25px;
+  right: -15px;
+}
+
+.watch__container_box_list_copy {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.footer {
+  background-color: #F2F2F2;
+}
+
+.footer__container {
+  padding-top: 34px;
+  padding-bottom: 60px;
+}
+
+.footer__container_block {
+  padding: 0 25px;
+}
+
+.footer__container_block_text {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.footer__container_block_form {
+  position: relative;
+  margin-top: 10px;
+  border-bottom: solid 1px #000000;
+}
+
+.footer__container_block_form_input {
+  font-size: 12px;
+  line-height: 18px;
+  color: #9F9C9C;
+  width: 100%;
+  padding: 5px 0;
+  background: none;
+  border: none;
+}
+
+.footer__container_block_form_button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 3px;
+  right: 0;
+  cursor: pointer;
+}
 /*# sourceMappingURL=body.css.map */
