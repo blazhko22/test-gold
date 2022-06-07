@@ -19,23 +19,45 @@
     </div>
     <header class="header">
         <div class="container header__container">
-            <button
-                class="menu-toggle js-open-menu"
-                aria-expanded="false"
-                aria-controls="mobile-menu"
-            >
-                <svg
-                    width="20"
-                    height="20"
-                >
-                    <use href="./img/icons.svg#icon-menu"></use>
-                </svg>
-            </button>
-            <button class="button">
-                <span class="button_span"></span>
-                <span class="button_span"></span>
-                <span class="button_span"></span>
-            </button>
+            <nav class="header__container_nav">
+                <a class="header__container_button">
+                    <span class="header__container_button_span"></span>
+                    <span class="header__container_button_span"></span>
+                    <span class="header__container_button_span"></span>
+                </a>
+                <ul class="header__container_list">
+                    <li class="header__container_list_item">
+                        <a href="#">WHAT’S </a>
+                    </li>
+                    <li class="header__container_list_item">
+                        <a href="#">BRANDS</a> 
+                    </li>
+                    <li class="header__container_list_item">
+                        <a href="#">CURATIONS</a> 
+                    </li>
+                    <li class="header__container_list_item">
+                        <a href="#">ART</a> 
+                    </li>
+                    <li class="header__container_list_item">
+                        <a href="#">BEAUTY</a> 
+                    </li>
+                    <li class="header__container_list_item">
+                        <a href="#">SELF CARE</a> 
+                    </li>
+                    <li class="header__container_list_item">
+                        <a href="#">STYLE</a> 
+                    </li>
+                    <li class="header__container_list_item">
+                        <a href="#">LIFESTYLE</a> 
+                    </li>
+                    <li class="header__container_list_item">
+                        <a href="#">TECH</a> 
+                    </li>
+                    <li class="header__container_list_item">
+                        <a href="#">STORIES</a> 
+                    </li>
+                </ul>                
+            </nav>            
             <div class="header__icon">
                 <button class="header__icon_button">
                     <img class="header__icon_search"
@@ -111,8 +133,7 @@
                         </li>                        
                     </ul>
                 </div>
-            </div>
-            
+            </div>            
         </div>
     </header>
     <main>
@@ -148,7 +169,61 @@
         <section class="slider">
             <div class="container">
                 <div class="slider__container">
-                    <div class="slider__container_photo">
+                    <div class="slider__container_text">
+                        <h3 class="slider__container_text_title">A LIVE CURATION WITH</h3>
+                        <svg
+                            class="slider__container_text_svg"
+                            width="247"
+                            height="247"
+                        >
+                            <use href="./img/icons.svg#icon-roup"></use>
+                        </svg>
+                        <div class="slider__container_text_info">
+                            <span class="slider__container_text_info_point"></span>
+                            <span class="slider__container_text_info_text">LIVE RECORDING</span>
+                        </div>                       
+                        <p class="slider__container_text_rubric">Our mission is to create 
+                            a better way for customers 
+                            to discover, engage and shop emerging brands and artists 
+                            of tomorrow.
+                        </p>
+                        <button class="slider__container_text_button">RSVP</button>
+                    </div>
+                    <div class="slider__container_box">
+                        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__container_box_input"/>
+                        <input type="radio" name="slider" title="slide2" class="slider__container_box_input"/>
+                        <input type="radio" name="slider" title="slide3" class="slider__container_box_input"/>                        
+                        <div class="slider__container_box_block">
+                          <div class="slider__container_box_block_content">                            
+                            <h2 class="slider__container_box_block_content_title">Maristella González</h2>
+                            <img class="slider__container_box_block_content_img"
+                                src="./img/photo.jpg"
+                                srcset="./img/photo@2x.jpg,
+                                        ./img/photo@3x.jpg" 
+                                alt="Girl face"
+                            >
+                          </div>
+                          <div class="slider__container_box_block_content">                            
+                            <h2 class="slider__container_box_block_content_title">Ekaterina Popova</h2>
+                            <img class="slider__container_box_block_content_img"
+                                src="./img/Popova.jpg"
+                                srcset="./img/Popova@2x.jpg,
+                                        ./img/Popova@3x.jpg" 
+                                alt="Girl face"
+                            >
+                          </div>
+                          <div class="slider__container_box_block_content">                            
+                            <h2 class="slider__container_box_block_content_title">Emily Kammeyer</h2>
+                            <img class="slider__container_box_block_content_img"
+                                src="./img/Kammeyer.jpg"
+                                srcset="./img/Kammeyer@2x.jpg,
+                                        ./img/Kammeyer@3x.jpg" 
+                                alt="Girl face"
+                            >
+                          </div>                        
+                        </div>
+                      </div>
+                    <!-- <div class="slider__container_photo">
                         <div class="slider__container_photo_box">
                             <svg
                                 class="slider__container_photo_box_svg"
@@ -157,21 +232,45 @@
                             >
                                 <use href="./img/icons.svg#icon-roup"></use>
                             </svg>
-                            <img class="slider__container_photo_box_img"
-                                src="./img/photo.jpg"
-                                srcset="./img/photo@2x.jpg,
-                                        ./img/photo@3x.jpg" 
-                                alt="Girl face"
-                            >
+                            <div class="slider__container_photo_box_block">
+                                <img class="slider__container_photo_box_img slide1"
+                                    src="./img/photo.jpg"
+                                    srcset="./img/photo@2x.jpg,
+                                            ./img/photo@3x.jpg" 
+                                    alt="Girl face"
+                                >
+                                <img class="slider__container_photo_box_img slide2"
+                                    src="./img/Popova.jpg"
+                                    srcset="./img/Popova@2x.jpg,
+                                            ./img/Popova@3x.jpg" 
+                                    alt="Girl face"
+                                >
+                                <img class="slider__container_photo_box_img slide3"
+                                    src="./img/Kammeyer.jpg"
+                                    srcset="./img/Kammeyer@2x.jpg,
+                                            ./img/Kammeyer@3x.jpg" 
+                                    alt="Girl face"
+                                >
+                            </div>
                         </div>
                         <div class="slider__container_photo_info">
                             <span class="slider__container_photo_info_point"></span>
                             <p class="slider__container_photo_info_text">LIVE RECORDING</p>
                         </div>
-                    </div>
+                     </div>
                     <div class="slider__container_text">
-                        <span class="slider__container_text_title">A LIVE CURATION WITH</span>
-                        <h2 class="slider__container_text_name">Maristella González</h2>
+                        <h3 class="slider__container_text_title">A LIVE CURATION WITH</h3>
+                        <svg
+                            class="slider__container_text_svg"
+                            width="247"
+                            height="247"
+                        >
+                            <use href="./img/icons.svg#icon-roup"></use>
+                        </svg>
+                        <div class="slider__container_text_info">
+                            <span class="slider__container_text_info_point"></span>
+                            <span class="slider__container_text_info_text">LIVE RECORDING</span>
+                        </div>                       
                         <p class="slider__container_text_rubric">Our mission is to create 
                             a better way for customers 
                             to discover, engage and shop emerging brands and artists 
@@ -180,12 +279,14 @@
                         <button class="slider__container_text_button">RSVP</button>
                     </div>
                     <div class="slider__container_tack">
-                        <ul class="slider__container_tack_block">
-                            <li class="slider__container_tack_block_item"></li>
-                            <li class="slider__container_tack_block_item"></li>
-                            <li class="slider__container_tack_block_item"></li>
-                        </ul>
-                    </div>
+                        <input type="radio" name="point" id="slide1" checked>
+                        <input type="radio" name="point" id="slide2">
+                        <input type="radio" name="point" id="slide3">
+            
+                        <label class="slider__container_tack_block_item" for="slide1"></label>
+                        <label class="slider__container_tack_block_item" for="slide2"></label>
+                        <label class="slider__container_tack_block_item" for="slide3"></label>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -501,9 +602,9 @@
         <div class="container">
             <div class="footer__container">
                 <div class="footer__container_block">
-                    <p class="footer__container_block_text">STAY IN THE KNOW! SUBSCRIBE 
+                    <span class="footer__container_block_text">STAY IN THE KNOW! SUBSCRIBE 
                         TO OUR NEWSLETTER. PLUS, RECEIVE 
-                        10% OFF YOUR FIRST ORDER.</p>
+                        10% OFF YOUR FIRST ORDER.</span>
                     <form class="footer__container_block_form">
                         <label class="footer__container_block_form_label">                        
                             <input
@@ -516,7 +617,78 @@
                         <button class="footer__container_block_form_button" type="submit">&rarr;</button>
                     </form>
                 </div>
-                <div class="footer__container_box"></div>
+                <div class="footer__container_box">
+                    <ul class="footer__container_box_list">
+                        <li class="footer__container_box_list_item">
+                            <a href="#">ABOUT SHOWFIELDS
+                                <span class="plus">&#10011;</span>
+                            </a>
+                            <ul class="footer__container_box_list_item_list">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__container_box_list_item">
+                            <a href="#">VISIT US
+                                <span class="plus">&#10011;</span>
+                            </a>
+                            <ul class="footer__container_box_list_item_list">
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Store Appointments</a></li>
+                                <li><a href="#">Virtual Appointments</a></li>                                
+                            </ul>
+                        </li>
+                        <li class="footer__container_box_list_item">
+                            <a href="#">PARTNER WITH US
+                                <span class="plus">&#10011;</span>
+                            </a>
+                            <ul class="footer__container_box_list_item_list">
+                                <li><a href="#">Artists</a></li>
+                                <li><a href="#">Brand Parternships</a></li>
+                                <li><a href="#">Careers</a></li>                                
+                            </ul>
+                        </li>
+                        <li class="footer__container_box_list_item">
+                            <a href="#">FIND US
+                                <span class="plus">&#10011;</span>
+                            </a>
+                            <ul class="footer__container_box_list_item_list">
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Pinterest</a></li>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="footer__container_box_list_block">
+                        <ul class="footer__container_box_list_block_social">
+                            <li class="footer__container_box_list_block_social_item">
+                                <a href="#">
+                                    <svg
+                                        class="footer__container_box_list_block_social_item_svg"
+                                        width="17"
+                                        height="17"
+                                    >
+                                        <use href="./img/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__container_box_list_block_social_item">
+                                <a href="#">
+                                    <svg
+                                        class="footer__container_box_list_block_social_item_svg"
+                                        width="17"
+                                        height="17"
+                                    >
+                                        <use href="./img/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

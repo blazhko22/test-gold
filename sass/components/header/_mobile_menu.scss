@@ -1,11 +1,11 @@
-.menu-toggle {
-    display: none;
-    position: absolute;
-    border: none;
-    padding: 0;
-    background-color: transparent;
+.header__container_nav {
+    position: relative;
+    &:hover > ul,
+    &:focus > ul {
+        display: block;
+    }
 }
-.button {
+.header__container_button {
     position: absolute;
     top: 8px;
     left: 8px;
@@ -15,7 +15,7 @@
     padding: 5px 0;
     background-color: transparent;
 }
-.button_span {
+.header__container_button_span {
     width: 20px;
     margin-bottom: 2px;
     border: solid 0.5px #000;
@@ -23,6 +23,25 @@
         margin-bottom: 0;
     }
 }
-// span {
-//     margin: 0;
-// }
+
+.header__container_list {
+    position: absolute;
+    display: none;
+    top: 25px;
+    left: 30px;
+    padding: 20px 20px;
+    width: 250px;
+    background-color: #f2f2f2;
+}
+.header__container_list_item {
+    padding: 5px 0;
+    & a {
+        font-size: 11px;
+        line-height: 13px;
+        text-align: center;
+        color: #000000; 
+        &:hover {
+            border-bottom: solid 3px #000000;
+        } 
+    }
+}
