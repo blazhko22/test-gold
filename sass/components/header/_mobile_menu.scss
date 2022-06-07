@@ -14,11 +14,14 @@
     border: none;
     padding: 5px 0;
     background-color: transparent;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 .header__container_button_span {
     width: 20px;
     margin-bottom: 2px;
-    border: solid 0.5px #000;
+    border: solid 0.5px $extra-color;
     &:last-child {
         margin-bottom: 0;
     }
@@ -27,11 +30,11 @@
 .header__container_list {
     position: absolute;
     display: none;
-    top: 25px;
-    left: 30px;
+    top: 10px;
+    left: 5px;
     padding: 20px 20px;
     width: 250px;
-    background-color: #f2f2f2;
+    background-color: $secondary-bg-color;
 }
 .header__container_list_item {
     padding: 5px 0;
@@ -39,9 +42,9 @@
         font-size: 11px;
         line-height: 13px;
         text-align: center;
-        color: #000000; 
+        color: $primary-text-color; 
         &:hover {
-            border-bottom: solid 3px #000000;
+            border-bottom: solid 3px $extra-color;
         } 
     }
 }

@@ -1,5 +1,8 @@
 .footer__container_box {
     margin-top: 35px;
+    @media screen and (min-width: 768px) {
+        padding: 0 120px;
+    }
 }
 .footer__container_box_list {
     display: flex;
@@ -7,18 +10,18 @@
 }
 .footer__container_box_list_item {
     position: relative;
-    border-top: solid 1px #000000;
+    border-top: solid 1px $extra-color;
     padding: 10px 25px;
     &>a{
         display: flex;
         justify-content: space-between; 
         font-size: 11px;
         line-height: 17px;
-        color: #000000;
+        color: $primary-text-color;
     }
     &:hover,
     &:focus {
-        background-color: #d3d3d3;
+        background-color: $extra-bg-color;
     }
     &:hover > ul,
     &:focus > ul {
@@ -32,19 +35,19 @@
     position: absolute;
     min-width: 270px;
     display: none;
-    background: #d3d3d3;
+    background: $extra-bg-color;
     z-index: 1;
     & a {
         font-size: 11px;
         line-height: 17px;
-        color: #000000;
+        color: $primary-text-color;
         padding-left: 10px;
     }
     
 }
 
 .footer__container_box_list_block {
-    border-top: solid 1px #000000;
+    border-top: solid 1px $extra-color;
     padding: 10px 25px;
 }
 .footer__container_box_list_block_social {

@@ -1,5 +1,8 @@
 .footer__container_block {
     padding: 0 25px;
+    @media screen and (min-width: 768px) {
+        padding: 0 120px;
+    }
 }
 .footer__container_block_text {
     font-size: 12px;
@@ -9,7 +12,7 @@
 .footer__container_block_form {
     position: relative;
     margin-top: 10px;
-    border-bottom: solid 1px #000000;
+    border-bottom: solid 1px $extra-color;
 }
 // .footer__container_block_form_label {
 
@@ -17,7 +20,7 @@
 .footer__container_block_form_input {
     font-size: 12px;
     line-height: 18px;
-    color: #9F9C9C;
+    color: $text-color-input;
     width: 100%;
     padding: 5px 0;
     background: none;

@@ -5,18 +5,28 @@
 
 .stars__container_svgs {
     position: absolute;
-    top: 25px;
-    left: -52px;
+    top: 4px;
+    left: -246px;
+    @media screen and (min-width: 768px) {
+        left: -69px;       
+    }
 }
 
 .stars__container_svg {
     position: absolute;
-    top: 54px;
+    top: 34px;
     right: -190px;
+    @media screen and (min-width: 768px) {
+        top: 29px;
+        right: -99px;      
+    }
 }
 
 .stars__container_title {
     font-size: 25px;
     line-height: 40px;
-    color: #000000;
+    color: $primary-text-color;
+    @media screen and (min-width: 768px) {
+        font-size: 36px;        
+    }
 }
