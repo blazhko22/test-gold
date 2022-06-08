@@ -373,6 +373,7 @@ img {
 .header__container {
   position: relative;
   padding: 8px 8px 32px 8px;
+  overflow: visible;
 }
 
 .header__box {
@@ -563,6 +564,7 @@ img {
 
 .header__container_list {
   position: absolute;
+  z-index: 5;
   display: none;
   top: 10px;
   left: 5px;
