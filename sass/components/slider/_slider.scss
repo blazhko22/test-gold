@@ -5,21 +5,42 @@
 .slider__container {
     position: relative;
     padding: 40px 15px 50px 15px;
+    @media screen and (min-width: 1024px) {
+        height: 518px;
+    }
 }
 
 .slider__container_text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 1024px) {
+        position: relative;
+    }
 }
 .slider__container_text_title {
     font-family: 'TradeGothocLT_BoldExtended';
     font-weight: 700;
     font-size: 16px;
     line-height: 37px;
+    @media screen and (min-width: 1024px) {
+        position: absolute;
+        top: 110px;
+        right: 210px;
+        font-size: 20px;
+    }
 }
 .slider__container_text_svg {
     margin-top: 20px;
+    @media screen and (min-width: 1024px) {
+        position: absolute;
+        top: -35px;
+        right: auto;
+        left: -30px;
+        margin-top: 0;
+        width: 452px;
+        height: 452px;
+    }
 }
 .slider__container_text_info {
     display: flex;
@@ -27,6 +48,12 @@
     padding: 9px 20px;
     border: solid 1px $extra-color;
     border-radius: 8px;
+    @media screen and (min-width: 1024px) {
+        position: absolute;
+        top: 374px;
+        right: auto;
+        left: 68px;
+    }
 }
 .slider__container_text_info_point {
     display: block;
@@ -41,6 +68,19 @@
     line-height: 19px;
     text-align: center;
 }
+.slider__container_text_rubric_active {
+    display: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    @media screen and (min-width: 1024px) {
+        position: absolute;
+        display: block;
+        top: 226px;
+        right: 109px;
+        width: 410px;
+    }
+}
 .slider__container_text_rubric {
     font-weight: 400;
     font-size: 16px;
@@ -48,6 +88,12 @@
     margin-top: 16px;
     text-align: center;
     padding: 0 20px;
+    @media screen and (min-width: 1024px) {
+        position: absolute;
+        top: 233px;
+        right: 130px;
+        width: 410px;
+    }
 }
 .slider__container_text_button {
     border: none;
@@ -60,6 +106,11 @@
     &:hover {
         background-color: $extra-color;
         color: $secondary-text-color;
+    }
+    @media screen and (min-width: 1024px) {
+        position: absolute;
+        top: 315px;
+        right: 235px;
     }
 }
 
@@ -99,6 +150,10 @@
         left: -128px;
         top: -102px;
     }
+    @media screen and (min-width: 1024px) {
+        left: -157px;
+        top: -32px;
+    }
 }
 .slider__container_box_input:checked:nth-of-type(2) ~ .slider__container_box_block {
     left: -480px;
@@ -107,6 +162,10 @@
         left: -1151px;
         top: -101px;
     } 
+    @media screen and (min-width: 1024px) {
+        left: -1551px;
+        top: -31px;
+    }
 }
 .slider__container_box_input:checked:nth-of-type(3) ~ .slider__container_box_block {
     left: -907px;
@@ -115,6 +174,10 @@
         left: -2176px;
         top: -101px;
     } 
+    @media screen and (min-width: 1024px) {
+        left: -2920px;
+        top: -33px;
+    }
 }
 .slider__container_box_block {
     position: absolute;
@@ -124,9 +187,6 @@
     height: 100%;
   
     transition: left 0.4s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     flex-flow: row nowrap;
 }
@@ -134,23 +194,32 @@
     height: 100%;
     padding: 2rem;
     text-align: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     flex: 1;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    @media screen and (min-width: 1024px) {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
 }
 .slider__container_box_block_content_title {
     font-size: 25px;
     line-height: 63px;
     margin-bottom: 25px;
+    @media screen and (min-width: 1024px) {
+        font-size: 61px;
+        margin-bottom: 0;
+        margin-left: 100px;
+    }
 }
 .slider__container_box_block_content_img {
     border-radius: 50%;
     width: 119px;
+    @media screen and (min-width: 1024px) {
+        width: 215px;
+    }
 }
 @keyframes check {
   50% {

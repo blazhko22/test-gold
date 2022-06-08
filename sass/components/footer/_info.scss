@@ -3,10 +3,17 @@
     @media screen and (min-width: 768px) {
         padding: 0 120px;
     }
+    @media screen and (min-width: 1024px) {
+        margin-top: 0;
+        padding: 0;
+    }
 }
 .footer__container_box_list {
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+    }
 }
 .footer__container_box_list_item {
     position: relative;
@@ -18,10 +25,19 @@
         font-size: 11px;
         line-height: 17px;
         color: $primary-text-color;
+        @media screen and (min-width: 1024px) {
+            &:hover,
+            &:focus {
+                background-color: $extra-bg-color;
+            }
+        }
     }
     &:hover,
     &:focus {
         background-color: $extra-bg-color;
+        @media screen and (min-width: 1024px) {
+            background: none;
+        }
     }
     &:hover > ul,
     &:focus > ul {
@@ -29,6 +45,17 @@
     }
     &:last-child {
         display: none;
+        @media screen and (min-width: 1024px) {
+            display: block;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        border-top: none;
+        padding: 0;
+        margin-right: 45px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 .footer__container_box_list_item_list{
@@ -42,13 +69,28 @@
         line-height: 17px;
         color: $primary-text-color;
         padding-left: 10px;
+        @media screen and (min-width: 1024px) {
+            padding-left: 0;
+            &:hover,
+            &:focus {
+                background-color: $extra-bg-color;
+            }           
+        }
     }
-    
+    @media screen and (min-width: 1024px) {
+        position: relative;
+        display: block;
+        background: none;
+        min-width: max-content;
+    }
 }
 
 .footer__container_box_list_block {
     border-top: solid 1px $extra-color;
     padding: 10px 25px;
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
 }
 .footer__container_box_list_block_social {
     display: flex;
@@ -58,5 +100,10 @@
     margin-left: 10px;
     &:first-child {
         margin-left: 0;
+    }
+}
+.plus {
+    @media screen and (min-width: 1024px) {
+        display: none;
     }
 }

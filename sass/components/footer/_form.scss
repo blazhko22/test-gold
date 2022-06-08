@@ -3,20 +3,23 @@
     @media screen and (min-width: 768px) {
         padding: 0 120px;
     }
+    @media screen and (min-width: 1024px) {
+        padding: 0;
+        width: 255px;
+    }
 }
 .footer__container_block_text {
     font-size: 12px;
     line-height: 18px;
+    @media screen and (min-width: 1024px) {
+        font-size: 11px;
+    }
 }
-
 .footer__container_block_form {
     position: relative;
     margin-top: 10px;
     border-bottom: solid 1px $extra-color;
 }
-// .footer__container_block_form_label {
-
-// }
 .footer__container_block_form_input {
     font-size: 12px;
     line-height: 18px;
@@ -25,6 +28,9 @@
     padding: 5px 0;
     background: none;
     border: none;
+    @media screen and (min-width: 1024px) {
+        font-size: 11px;
+    }
 }
 .footer__container_block_form_button {
     position: absolute;

@@ -4,4 +4,10 @@
 .footer__container {
     padding-top: 34px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 80px 62px;
+    }
 }
